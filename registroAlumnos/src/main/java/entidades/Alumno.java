@@ -16,50 +16,68 @@ public class Alumno {
     private boolean Activo;
 
     public Alumno(int idAlumno, String apellido, String nombre, LocalDate fechaNac, boolean Activo) {
+        this.idAlumno=idAlumno;
+        this.apellido=apellido;
+        this.nombre=nombre;
+        this.fechaNac=fechaNac;
+        this.Activo=Activo;
     }
 
     public Alumno(String apellido, String nombre, LocalDate fechaNac, boolean Activo) {
+        this.apellido=apellido;
+        this.nombre=nombre;
+        this.fechaNac=fechaNac;
+        this.Activo=Activo;
     }
 
     public Alumno() {
+        
     }
 
     public int getIdAlumno() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return this.idAlumno;
     }
 
     public void setIdAlumno(int IdAlumno) {
+        this.idAlumno=IdAlumno;
     }
 
     public String getApellido() {
-        throw new UnsupportedOperationException("Not supported yet.");
+         return this.apellido;
     }
 
     public void setApellido(String Apellido) {
+        this.apellido=Apellido;
     }
 
     public String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return this.nombre;
     }
 
     public void setNombre(String nombre) {
+        this.nombre=nombre;
     }
 
     public LocalDate getfechaNac() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return this.fechaNac;
     }
 
     public void setFechaNac(LocalDate fechaNac) {
+        this.fechaNac=fechaNac;
     }
 
     public boolean isActivo() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return this.Activo;
     }
 
     public void setActivo(boolean Activo) {
+          this.Activo=Activo;
     }
 
+    @Override
     public String toString() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return "Alumno{" + "idAlumno=" + idAlumno + ", apellido=" + apellido + ", nombre=" + nombre + ", fechaNac=" + fechaNac + ", Activo=" + Activo + '}';
     }
+
+   
 }

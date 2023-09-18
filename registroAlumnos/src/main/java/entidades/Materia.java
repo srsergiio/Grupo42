@@ -11,43 +11,57 @@ public class Materia {
     private boolean activo;
 
     public Materia(int idMateria, String nombre, int anioMateria, boolean activo) {
+        this.idMateria=idMateria;
+        this.nombre=nombre;
+        this.anioMateria=anioMateria;
+        this.activo=activo;
     }
 
     public Materia(String nombre, int anioMateria, boolean activo) {
+        this.nombre=nombre;
+        this.anioMateria=anioMateria;
+        this.activo=activo;
     }
 
     public Materia() {
     }
 
     public int getidMateria() {
-        throw new UnsupportedOperationException("Not supported yet.");
+       return this.idMateria;
     }
 
-    public String setidMateria(int idMateria) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public void setidMateria(int idMateria) {
+        this.idMateria=idMateria;
     }
 
-    public void getNombre() {
+    public String getNombre() {
+        return this.nombre;
     }
 
     public void setNombre(String nombre) {
+        this.nombre=nombre;
     }
 
     public int getanioMateria() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return  this.anioMateria;
     }
 
     public void setanioMateria(int anioMateria) {
+        this.anioMateria=anioMateria;
     }
 
     public boolean isActivo() {
-        throw new UnsupportedOperationException("Not supported yet.");
+       return this.activo;
     }
 
     public void setActivo(boolean activo) {
+        this.activo=activo;
     }
 
+    @Override
     public String toString() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return "Materia{" + "idMateria=" + idMateria + ", nombre=" + nombre + ", anioMateria=" + anioMateria + ", activo=" + activo + '}';
     }
+
+
 }

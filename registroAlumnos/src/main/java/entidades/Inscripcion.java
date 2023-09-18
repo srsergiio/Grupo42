@@ -11,22 +11,32 @@ public class Inscripcion {
     private double nota;
 
     public Inscripcion(int idInscripcion, Alumno alumno, Materia materia, double nota) {
+        this.idInscripcion=idInscripcion;
+        this.alumno=alumno;
+        this.materia=materia;
+        this.nota=nota;
     }
 
     public Inscripcion(Alumno alumno, Materia materia, double nota) {
+        this.alumno=alumno;
+        this.materia=materia;
+        this.nota=nota;
     }
 
     public Inscripcion(double nota) {
+        this.nota=nota;
     }
 
     public Inscripcion() {
+       
     }
 
     public Alumno getAlumno() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return this.alumno;
     }
 
     public void setAlumno(Alumno alumno) {
+        this.alumno=alumno;
     }
 
     public Materia getMateria() {
