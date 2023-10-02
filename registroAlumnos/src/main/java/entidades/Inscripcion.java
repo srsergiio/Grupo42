@@ -27,8 +27,7 @@ public class Inscripcion {
         this.nota=nota;
     }
 
-    public Inscripcion() {
-       
+    public Inscripcion() {  
     }
 
     public Alumno getAlumno() {
@@ -40,37 +39,42 @@ public class Inscripcion {
     }
 
     public Materia getMateria() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return this.materia;
     }
 
     public void setMateria(Materia materia) {
+        this.materia=materia;
     }
 
     public int getidInscripcion() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return this.idInscripcion;
     }
 
     public void setidInscripcion(int idInscripcion) {
+        this.idInscripcion=idInscripcion;
     }
 
     public int getIdAlumno() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return  this.alumno.getIdAlumno();
     }
 
     public void setIdAlumno(int IdAlumno) {
+        this.alumno.setIdAlumno(IdAlumno);
     }
 
     public int getIdMateria() {
-        throw new UnsupportedOperationException("Not supported yet.");
+       return this.materia.getidMateria();
     }
 
     public void setIdMateria(int IdMateria) {
+        this.materia.setidMateria(IdMateria);
     }
 
     public double getNota() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return this.nota;
     }
 
     public void setNota(double nota) {
+        this.nota=nota;
     }
 }
